@@ -1,0 +1,78 @@
+NAME: 'ac3ac4'
+
+MODEL:
+    model_type: 'superhuman'  # 'mala' or 'superhuman'
+    input_nc: 1
+    output_nc: 12
+    emd: 16
+    if_sigmoid: True
+    # for 'mala':
+    init_mode_mala: 'kaiming'
+    # for 'superhuman':
+    if_skip: 'False'
+    filters: 
+        - 28
+        - 36
+        - 48
+        - 64
+        - 80
+    upsample_mode: 'bilinear'  # 'bilinear', 'nearest', 'transpose', 'transposeS'
+    decode_ratio: 1
+    merge_mode: 'add'  # 'add', 'cat'
+    pad_mode: 'zero'  # 'zero', 'replicate'
+    bn_mode: 'async'  # 'sync', 'async'
+    relu_mode: 'elu'  # 'elu', 'relu', 'leaky'
+    init_mode: 'kaiming_normal'  # 'kaiming_normal', 'kaiming_uniform', 'xavier_normal', 'xavier_uniform'
+
+TRAIN:
+    resume: False
+    if_valid: True
+    if_seg: True
+    cache_path: '../caches/'
+    save_path: '../models/'
+    pad: 0
+    loss_func: 'WeightedMSELoss'   # 'WeightedBCELoss', 'BCELoss'
+    affs0_weight: 1
+    embedding_mode: 5
+    if_verse: False
+    separate_weight: True
+
+    opt_type: 'adam'
+    total_iters: 200000
+    warmup_iters: 0
+    base_lr: 0.0001
+    end_lr: 0.0001
+    display_freq: 100
+    valid_freq: 1000
+    save_freq: 1000
+    decay_iters: 100000
+    weight_decay: ~
+    power: 1.5
+
+    batch_size: 2
+    num_workers: 2
+    if_cuda: True
+
+    random_seed: 555  # -1 is none
+
+DATA:
+    dataset_name: 'ac4'
+    train_split: 80
+    test_split: 20
+    data_folder: '../data'
+    padding: 50
+    shift_channels: ~
+    if_dilate: True
+    widen_way: True
+    if_scale_aug: False
+    if_filp_aug: True
+    if_rotation_aug: True
+    if_intensity_aug: True
+    if_elastic_aug: True
+    if_ema_flip: True
+    if_ema_intensity: True
+    if_ema_mask: True
+
+TEST:
+    pad: 0
+    model_name: ''
