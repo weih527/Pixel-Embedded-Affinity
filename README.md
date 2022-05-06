@@ -48,16 +48,6 @@ Download and unzip them in corresponding folders in './data'.
 
 
 
-## Model Zoo
-
-| Datasets                                                     | Models                                | Download                                                     |
-| ------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------------------ |
-| [CVPPP (A1)](https://competitions.codalab.org/competitions/18405) | cvppp-test.ckpt/cvppp-validation.ckpt | [BaiduYun](https://pan.baidu.com/s/1MH56t8AO8PksROY_1C65Ag) (Access code: weih) or [GoogleDrive](https://drive.google.com/drive/folders/1p94MLjq_pJtMC6B_CQhWyMqIv-HKEZzL?usp=sharing) |
-| [BBBC039V1](https://bbbc.broadinstitute.org/BBBC039)         | bbbc039v1-test.ckpt                   | [BaiduYun](https://pan.baidu.com/s/1a53osYbXjGpi2sPr5RkViw) (Access code: weih) or [GoogleDrive](https://drive.google.com/drive/folders/1p94MLjq_pJtMC6B_CQhWyMqIv-HKEZzL?usp=sharing) |
-| [AC3/AC4](https://software.rc.fas.harvard.edu/lichtman/vast/<br/>AC3AC4Package.zip) | ac3ac4-test.ckpt                      | [BaiduYun](https://pan.baidu.com/s/1Upix_P3u9C9ZYAthumZ9yg) (Access code: weih) or [GoogleDrive](https://drive.google.com/drive/folders/1p94MLjq_pJtMC6B_CQhWyMqIv-HKEZzL?usp=sharing) |
-
-
-
 ## CVPPP
 
 ```she
