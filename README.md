@@ -117,6 +117,28 @@ python inference.py -c=ac3ac4 -mn=ac3ac4 -id=ac3ac4-test -m=ac3
 
 
 
+## Notice
+
+During the training phase, we use the SBD metric (./scripts_cvppp/utils/evaluate.py/SymmetricBestDice) to select models.
+
+In our paper, we provide the [SBD score](https://competitions.codalab.org/competitions/18405#learn_the_details-evaluation) and the absDiffFG score returned by the website as follows.
+
+| ResNet-50                      | ResNet-101                      | ResUNet                       |
+| ------------------------------ | ------------------------------- | ----------------------------- |
+| ![](./images/ResNet50-old.png) | ![](./images/ResNet101-old.png) | ![](./images/ResUNet-old.png) |
+
+**However, we have noticed that the website has made adjustments to the SBD metric by the end of 2021.**
+
+Therefore, we submit our previous results again (05/02/2022), and obtain the new return result as follows.
+
+| ResNet-50                      | ResNet-101                      | ResUNet                       |
+| ------------------------------ | ------------------------------- | ----------------------------- |
+| ![](./images/ResNet50-new.png) | ![](./images/ResNet101-new.png) | ![](./images/ResUNet-new.png) |
+
+We can find that the new SBD scores are significantly lower than the previous scores.
+
+
+
 ## Contact
 
 If you have any problem with the released code, please do not hesitate to contact me by email (weih527@mail.ustc.edu.cn).
