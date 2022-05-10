@@ -117,7 +117,7 @@ python inference.py -c=ac3ac4 -mn=ac3ac4 -id=ac3ac4-test -m=ac3
 
 
 
-## Notice
+## Notice for CVPPP
 
 During the training phase, we use the SBD metric (./scripts_cvppp/utils/evaluate.py/SymmetricBestDice) to select models.
 
