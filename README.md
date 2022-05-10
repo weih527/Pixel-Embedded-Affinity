@@ -129,7 +129,7 @@ In our paper, we provide the [SBD score](https://competitions.codalab.org/compet
 
 **However, we have noticed that the website has made adjustments to the SBD metric by the end of 2021.**
 
-Therefore, we submit our previous results again (05/02/2022), and obtain the new return result as follows.
+Therefore, we submit our previous results again (05/02/2022), and obtain the new return scores as follows.
 
 | ResNet-50                      | ResNet-101                      | ResUNet                       |
 | ------------------------------ | ------------------------------- | ----------------------------- |
